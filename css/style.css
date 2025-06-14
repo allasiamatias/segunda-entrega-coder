@@ -1,0 +1,463 @@
+/* reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* navbar general */
+.navbar {
+  background-color: #d2c3e3;
+  width: 90%;
+  height: 5rem;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 50px;
+}
+
+.container{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.navbar-nav{
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar-toggler{
+  border: none;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.navbar-toggler:focus{
+box-shadow: none;
+}
+
+.collapse{
+  background-color: #d2c3e3;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+  padding: 1rem 0;
+}
+
+.navbar-nav a{
+  color: #003fa2;
+  font-weight: 600;
+  text-align: left;
+  padding: 0 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.navbar-nav a:hover{
+text-decoration: underline;
+transition: 500ms;
+color: #003fa2;
+}
+
+/* body general*/
+body{
+  background-color: #d2c3e3ca;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* main index*/
+.main-index{
+  width: 95%;
+  border: 0.5rem solid #d2c3e3;
+  border-radius: 50px;
+  margin: auto;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+}
+
+.main-index-img img{
+  width: 70%;
+  padding: 1rem 0 0 1.5rem;
+}
+
+.main-index-txt h1{
+  font-size: 1rem;
+  text-align: end;
+  padding: 0 1.5rem 1.5rem 0;
+  color: #003fa2;
+  font-family: "PT Sans", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* section index */
+.section-index-img{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(2, 50%);
+  gap: 0.8rem;
+  margin: 1rem 1rem 3rem 1rem;
+  align-content: center;
+}
+
+.section-index-img img{
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+  border-radius: 25px;
+}
+
+.section-index p {
+  width: 85%;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  color: #003fa2;
+  font-family: "Quicksand", sans-serif;
+  }
+
+.section-index-img-2{
+  grid-row: span 2;
+}
+
+/* main profesionales */
+.main-profesionales h1{
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  padding: 0 0 1.5rem 1rem;
+  color: #003fa2;
+  font-family: "PT Sans", sans-serif;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.main-profesionales-grilla{
+  display: grid;
+  gap: 2rem;
+  margin: 0 1rem;
+}
+
+.item-profesional{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.item-profesional.reverse{
+  flex-direction: row-reverse;
+}
+
+.main-profesionales-grilla img{
+  width: 35%;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+/* main servicios */
+.main-servicios h1{
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  padding-left: 1rem;
+  color: #003fa2;
+  font-family: "PT Sans", sans-serif;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.main-servicios-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap:1.5rem; 
+  max-width: 80vw;
+  margin: auto;
+  padding: 1rem 0;
+}
+
+.main-servicios-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #003ea2bd;
+  border-radius: 25px;  
+}
+
+.main-servicios-card h2{
+  color: #ededed;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+
+.main-servicios-card img{
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+}
+
+.main-servicios-card p{
+  color: #ededed;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  font-size: 0.6rem;
+  margin-bottom: 2rem;
+}
+
+/* main contacto */
+.main-contacto h1{
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  padding: 0 0 1.5rem 1rem;
+  color: #003fa2;
+  font-family: "PT Sans", sans-serif;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.formulario-contacto{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 80vw;
+}
+
+.formulario-contacto label{
+  font-family:"PT Sans", sans-serif; 
+  color: #003fa2;
+  margin-top: 1rem;
+}
+
+.formulario-contacto input{
+  background-color: #ededed;
+  border: 1px solid #003fa2;
+}
+
+textarea{
+  font-family:"PT Sans", sans-serif;
+  color: #000;
+  background-color: #ededed;
+  resize:vertical;
+  min-height: 6rem;
+  max-height: 8rem;
+  border-radius: 8px;
+  border: 1px solid #003fa2;
+  padding-left: 0.5rem;
+}
+
+.formulario-contacto input{
+  border-radius: 8px;
+}
+
+.boton{
+  width: 25%;
+  margin:auto;
+  margin-top: 2rem;
+  color: #003fa2;
+  background-color: #003fa2;
+}
+
+.boton:hover{
+  background-color: #003fa2;
+  color: #ededed;
+    box-shadow: 0 0 10px #003fa2;
+}
+
+.boton:focus{
+  background-color: #003fa2;
+  color: #ededed;
+  box-shadow: 0 0 60px #ededed;
+}
+
+/* footer general*/
+footer{
+  margin-top: auto;
+}
+
+.footer{
+  background-color: #003fa2;
+  border-radius: 30px 30px 0 0;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  }
+
+.footer-info{
+  color: #d2c3e3;
+  padding: 1.5rem 2rem 1rem 0;
+  font-size: 0.7rem;
+  font-family:"PT Sans", sans-serif;
+  font-style: italic;
+}
+
+.footer-link a{
+  color: #d2c3e3;
+  padding-left:1.5rem;
+  font-size: 0.7rem;
+  }
+
+  /* estilo tablet */
+@media screen and (min-width: 768px){
+  /* index */
+  .main-index-txt h1{
+    font-size: 1.5rem;
+    padding-right: 4rem;
+  }
+  
+  .section-index-img{
+    margin-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .section-index p{
+    font-size: 1.5rem;
+  }
+
+  .footer-info{
+    font-size: 1.2rem;
+  }
+
+  .footer-link a{
+    font-size: 1.2rem;
+    padding-left: 4rem;
+  }
+
+/* profesionales */
+  .main-profesionales h1{
+    font-size: 1.5rem;
+    padding-left: 4.5rem;
+  }
+
+  .main-profesionales-grilla{
+  margin: 0 3rem;
+  padding-bottom: 1rem;
+  }
+  
+  .main-profesionales-grilla div img{
+    width: 30%;
+  }
+
+  .main-profesionales-grilla div p{
+    font-size: 1.5rem;
+  }
+
+  /* servicios */
+  .main-servicios h1{
+    font-size: 1.5rem;
+    padding-left: 4.5rem;
+  }
+
+  .main-servicios-card{
+    width: 80%;
+    margin: auto;
+    height: 20rem;
+  }
+
+  .main-servicios-card img{
+    height: 180px;
+  }
+
+  .main-servicios-card h2{
+    font-size: 1.2rem;
+  }
+  
+  .main-servicios-card p{
+    font-size: 0.9rem;
+  }
+
+  /* contacto */
+  .main-contacto h1{
+    font-size: 1.5rem;
+    padding-left: 4.5rem;
+  }
+
+  .formulario-contacto{
+    width: 70%;
+  }
+}
+
+/* estilo desktop */
+@media screen and (min-width: 1024px){
+/* index */
+  .main-index-txt h1{
+    font-size: 2.3rem;
+    padding-right: 5rem;
+  }
+
+  .section-index-img{
+    margin-top: 5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+    .footer-info{
+    margin-right: 5rem;
+    font-size: 1rem;
+  }
+
+  .footer-link{
+    margin-left: 3rem;
+  }
+
+/* profesionales */
+  .main-profesionales h1{
+    padding-left: 6rem;
+  }
+
+  .main-profesionales-grilla{
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 2rem;
+  }
+  .main-profesionales-grilla div img{
+    height:100%;
+    width: 180px;
+    object-fit:cover;
+  }
+  .item-profesional,.item-profesional.reverse{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .main-profesionales-grilla div p{
+    font-size: 1.5rem;
+  }
+
+  /* servicios */
+  .main-servicios h1{
+    padding-left: 6rem;
+  }
+  .main-servicios-card{
+    width: 20vw;
+  }
+  .main-servicios-grid{
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 2rem;
+  }
+
+  .main-servicios-card h2{
+    font-size: 1.5rem;
+  }
+
+  .main-servicios-card p{
+    font-size: 1rem;
+  }
+
+  /* contacto */
+  .main-contacto h1{
+    padding-left: 6rem;
+  }
+
+  .formulario-contacto{
+    width: 40%;
+    margin-bottom: 2rem;
+  }
+}
